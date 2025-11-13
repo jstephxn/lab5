@@ -10,7 +10,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Pull Docker image
-        run: sudo docker pull 1mitic/calculator-app:v1
+        run: docker pull 1mitic/calculator-app:v1
         # Remove the pulled docker container if it exists
       - name: Delete Docker container
         run:  docker rm -f calculator-app || true
